@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Nineflix | Desenvolvedores</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Boto Photo Studio HTML Template">
+		<meta name="keywords" content="photo, html">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="../static/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="../static/css/slicknav.min.css"/>
+		<link rel="stylesheet" href="../static/css/fresco.css"/>
+		<link rel="stylesheet" href="../static/css/slick.css"/>
+		<link rel="stylesheet" href="../static/css/style.css"/>
+		<link rel="stylesheet" href="../static/css/catalogo.css"/>
+	</head>
+
+	<body>
+		<!-- Page Preloder -->
+		<div id="preloder">
+			<div class="loader"></div>
+		</div>
+
+		<!-- Header Section -->
+		
+		
+
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+						<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center">
+							<a href="index.html" class="site-logo">
+								<img src="/static/img/logo.png" alt="">
+							</a>
+						</div>
+					<div class="col-sm-4 col-md-3 order-3 order-sm-3">
+						<div class="header__switches">
+							<a href="adm.html"><i class="fa fa-cog"></i></a>
+						</div>
+					</div>
+					
+				</div>
+				
+				<nav class="main__menu">
+					<ul class="nav__menu">
+						<li><a href="index.html" class="menu--active">Home</a></li>
+						<li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+						<li><a href="catalogo.html">Catálogo</a></li>
+					</ul>
+					<div id="filtro-config">
+						<!-- eu não seu se necessáriamente precisa dessa div filtro-filmes ou talvez poderia falar com o form-->
+						<div id="filtro-filmes">
+							<form action="/filter" method="POST">
+								<!-- a div filtro-input era para conseguir envolver os dois na borda branca-->
+								<div id="filtro-input">
+									<input type="search" placeholder="Pesquisar" id="search" name="search">
+								</div>
+								<!-- <button class="btn btn-danger" type="submit">Pesquisar</button> -->
+							</form>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- Header Section end -->
+
+		<!-- About Page -->
+		<section id="catalogo">
+			<!-- coloquei os dois dentro de uma div para conseguir jogar o display flex -->
+					
+			<h3>Catálogo</h3>
+			<div id="title-lista">
+				
+				<a href="/catalogo">Listar Tudo</a>
+			</div>
+			<!-- coloquei os dois dentro de uma div para conseguir jogar o display flex -->
+	
+			<table>
+				<thead>
+					<tr>
+						<th>Filme/Série</th>
+						<th>Cartaz</th>
+					</tr>
+				</thead>
+	
+				<tbody>
+					{% for f in filmes %}
+					<tr>
+						<td>{{f.nome}}</td>
+						<td>
+							<img src="{{f.cartaz}}"></img>
+						</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+	
+		</section>
+		<!-- About Page end -->
+
+		<!-- Footer Section -->
+		<footer class="footer__section">
+			<div class="container">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<div class="footer__copyright__text">
+					<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Grupo 9 - Turma 5 | Blue EdTech <i class="fa fa-heart" aria-hidden="true"></i></p>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer Section end -->
+
+		<!-- Search Begin -->
+		<div class="search-model">
+			<div class="h-100 d-flex align-items-center justify-content-center">
+				<div class="search-close-switch">+</div>
+				<form class="search-model-form">
+					<input type="text" id="search-input" placeholder="Search here.....">
+				</form>
+			</div>
+		</div>
+		<!-- Search End -->
+
+		<!--====== Javascripts & Jquery ======-->
+		<script src="../static/js/vendor/jquery-3.2.1.min.js"></script>
+		<script src="../static/js/jquery.slicknav.min.js"></script>
+		<script src="../static/js/slick.min.js"></script>
+		<script src="../static/js/fresco.min.js"></script>
+		<script src="../static/js/main.js"></script>
+
+		</body>
+</html>
