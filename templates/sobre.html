@@ -14,19 +14,41 @@
 <body>
 
     <nav>
-        <a class="logo" href="/"><img src="../static/img/logo.png" id="img"></a>
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div id="logo">
+            <a href="/">
+                <img src=" {{ url_for('static', filename='img/logo.png')}} " alt="">
+            </a>
         </div>
-        <ul class="nav-list">
-            <li><a href="/">Catálogo</a></li>
-        </ul>
+
+        <div id="filtro-config">
+            <div id="filtro-filmes">
+                <form action="/filter" method="POST">
+                    <div id="filtro-input">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="search" placeholder="Pesquisar" id="search" name="search">
+                    </div>
+                        
+                </form>
+            </div>
+            <div id="icon-config">
+                <a href="/login" id="config"> 
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
     </nav>
 
+    <section id="catalogo2">
+        <h3>Onde Assitir?</h3>
+        
+    </section>
+    
+        <div id="title-lista">
+            <a href="/">Home</a>
+            <a href="/">Listar Tudo</a>
+        </div>
+
     <header>
-        <P1>Onde Assitir?</P1>
         <div>
             <span> Com a profusão de serviços de streaming há cada vez mais conteúdo disponível, mas também mais lugares
                 para procurar, esse catálogo te ajuda com isso. Digite o que você procura para descobrir qual serviço de
@@ -38,6 +60,17 @@
     <section id="devs">
         <P2> Desenvolvedores do Projeto </P2>
 
+        <a href="https://anacarolinagarcone.herokuapp.com/" target="_blank">
+            <div class="box">
+                <div class="imgBX">
+                    <img src="../static/img/ana.png">
+                </div>
+                <div class="content">
+                    <h2>Ana Carolina<br><span>Developer</span></h2>
+                </div>
+            </div>
+        </a>
+
         <a href="https://portfoliocbernardox.herokuapp.com/" target="_blank">
             <div class="box">
                 <div class="imgBX">
@@ -45,6 +78,17 @@
                 </div>
                 <div class="content">
                     <h2>Carlos<br><span>Developer</span></h2>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://portifoliocaua.herokuapp.com/" target="_blank">
+            <div class="box">
+                <div class="imgBX">
+                    <img src="../static/img/caua.png">
+                </div>
+                <div class="content">
+                    <h2>Cauã<br><span>Developer</span></h2>
                 </div>
             </div>
         </a>
@@ -59,28 +103,7 @@
                 </div>
             </div>
         </a>
-       
-        <a href="https://portifoliocaua.herokuapp.com/" target="_blank">
-            <div class="box">
-                <div class="imgBX">
-                    <img src="../static/img/caua.png">
-                </div>
-                <div class="content">
-                    <h2>Cauã<br><span>Developer</span></h2>
-                </div>
-            </div>
-        </a>
-
-        <a href="https://anacarolinagarcone.herokuapp.com/" target="_blank">
-            <div class="box">
-                <div class="imgBX">
-                    <img src="../static/img/ana.png">
-                </div>
-                <div class="content">
-                    <h2>Ana Carolina<br><span>Developer</span></h2>
-                </div>
-            </div>
-        </a>
+         
       
         <a href="https://portfoliossympson.herokuapp.com/" target="_blank">
             <div class="box">
@@ -95,8 +118,14 @@
 
     </section>
 
-    <footer>
-
+    <footer class="footer__section">
+        <div class="container">
+           
+            <div class="footer__copyright__text">
+                <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Grupo 9 - Turma 5 | Blue EdTech <i class="fa fa-heart" aria-hidden="true"></i></p>
+            </div>
+            
+        </div>
     </footer>
 
     <script src="../static/js/inicio.js"></script>

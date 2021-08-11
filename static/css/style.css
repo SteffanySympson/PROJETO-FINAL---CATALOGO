@@ -68,24 +68,7 @@ nav div#filtro-config div#icon-config a#config:hover {
 }
 
 
-/* nav ul {
-	display: flex;
-	list-style: none;
-}
 
-nav ul li {
-	padding: 1.5rem;
-}
-
-nav ul li a {
-	text-decoration: none;
-	color: #ffffff;
-	transition: all 0.3s ease-out;
-}
-
-nav ul li a:hover {
-	color: #F40000;
-} */
 
 section#catalogo {
 	max-width: 100%;
