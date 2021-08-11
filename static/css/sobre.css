@@ -235,23 +235,7 @@ filter: blur(40px);
 }
 
 .box:before, .box:after{
-background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
-}
-
-.box:nth-child(2):before, .box:nth-child(2):after{
-background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
-}
-
-.box:nth-child(3):before, .box:nth-child(3):after{
-background: linear-gradient(235deg,#772aff,#010615,#2196f3);
-}
-
-.box:nth-child(3):before, .box:nth-child(3):after{
-background: linear-gradient(235deg,#772aff,#010615,#2196f3);
-}
-
-.box:nth-child(5):before, .box:nth-child(5):after{
-background: linear-gradient(235deg,#ffbd00,#010615,#390099);
+background: linear-gradient(235deg,#ff0000,#010615,#414242);
 }
 
 .box .content{
