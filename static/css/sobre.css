@@ -160,10 +160,12 @@ body header img {
 }
 
 header div span {
-  font-size: 1.5vw;
-  font-weight: 700;
+  font-size: 1.3vw;
+  font-weight: 500;
   color:floralwhite;
   padding: 3rem;
+  line-height: 35px;
+  text-align: justify;
 }
 
 body section#devs{

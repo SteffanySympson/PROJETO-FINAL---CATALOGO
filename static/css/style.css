@@ -27,6 +27,13 @@ nav div#logo a img {
 	margin-left: 1rem;
 }
 
+nav div#title-lista{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	}
+
 nav div#filtro-config {
 	display: flex;
 
