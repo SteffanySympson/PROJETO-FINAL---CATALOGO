@@ -27,13 +27,13 @@
 			<div class="container-fluid">
 				<div class="row">
 						<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center">
-							<a href="index.html" class="site-logo">
+							<a href="/" class="site-logo">
 								<img src="/static/img/logo.png" alt="">
 							</a>
 						</div>
 					<div class="col-sm-4 col-md-3 order-3 order-sm-3">
 						<div class="header__switches">
-							<a href="adm.html"><i class="fa fa-cog"></i></a>
+							<a href="/adm"><i class="fa fa-cog"></i></a>
 						</div>
 					</div>
 					
@@ -41,9 +41,7 @@
 				
 				<nav class="main__menu">
 					<ul class="nav__menu">
-						<li><a href="index.html" class="menu--active">Home</a></li>
-						<li><a href="desenvolvedores.html">Desenvolvedores</a></li>
-						<li><a href="catalogo.html">Catálogo</a></li>
+						<li><a href="/sobre" class="menu--active">Sobre o projeto</a></li>
 					</ul>
 					<div id="filtro-config">
 						<!-- eu não seu se necessáriamente precisa dessa div filtro-filmes ou talvez poderia falar com o form-->
@@ -67,41 +65,13 @@
 		<!-- Hero Section -->
 		<section class="hero__section">
 			<div class="hero-slider">
+				{% for f in filmes %}
 				<div class="slide-item">
-					<a class="fresco" href="../static/img/filme1.gif" data-fresco-group="projects">
-						<img src="../static/img/filme1.gif" alt="">
+					<a class="fresco" href="{{f.cartaz}}" data-fresco-group="projects">
+						<img src="{{f.cartaz}}" alt="">
 					</a>
 				</div>
-				<div class="slide-item">
-					<a class="fresco" href="../static/img/filme2.jpg" data-fresco-group="projects">
-						<img src="../static/img/filme2.jpg" alt="">
-						</a>
-				</div>
-				<div class="slide-item">
-					<a class="fresco" href="../static/img/filme3.jpg" data-fresco-group="projects">
-						<img src="../static/img/filme3.jpg" alt="">
-					</a>	
-				</div>
-				<div class="slide-item">
-					<a class="fresco" href="../static/img/filme4.jpg" data-fresco-group="projects">
-						<img src="../static/img/filme4.jpg" alt="">
-					</a>	
-				</div>
-				<div class="slide-item">
-					<a class="fresco" href="../static/img/filme5.jpg" data-fresco-group="projects">
-						<img src="../static/img/filme5.jpg" alt="">
-					</a>	
-				</div>
-				<div class="slide-item">
-					<a class="fresco" href="../static/img/filme6.jpg" data-fresco-group="projects">
-						<img src="../static/img/filme6.jpg" alt="">
-					</a>	
-				</div>
-				<div class="slide-item">
-					<a class="fresco" href="../static/img/filme7.jpg" data-fresco-group="projects">
-						<img src="../static/img/filme7.jpg" alt="">
-					</a>	
-				</div>
+				{% endfor %}
 			</div>
 			<div class="hero-text-slider">
 			</div>
