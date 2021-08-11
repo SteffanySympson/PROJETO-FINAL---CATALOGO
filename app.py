@@ -10,12 +10,12 @@ class Filme(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nome = db.Column(db.String(150), nullable=False)
     cartaz = db.Column(db.String(500), nullable=False)
-    categoria = db.Column(db.String(150), nullable=False)
+    genero = db.Column(db.String(150), nullable=False)
 
-    def __init__(self, nome, cartaz, categoria): 
+    def __init__(self, nome, cartaz, genero): 
         self.nome = nome
         self.cartaz = cartaz
-        self.categoria = categoria
+        self.genero = genero
 
 @app.route('/')
 def index():
@@ -37,7 +37,7 @@ def new():
         filme = Filme(
             request.form['nome'],
             request.form['cartaz'],
-            request.form['categoria']
+            request.form['genero']
             )
         db.session.add(filme)
         db.session.commit()
@@ -69,7 +69,7 @@ def edit(id):
     if request.method == 'POST':
         filme.nome = request.form['nome']
         filme.cartaz = request.form['cartaz']
-        filme.categoria = request.form['categoria']
+        filme.genero = request.form['genero']
         db.session.commit()
         return redirect('/adm')
     return render_template('adm.html', filme=filme, filmes=filmes)
@@ -93,12 +93,12 @@ def auth():
         flash('Erro no login, tente novamente!')
         return redirect('/login')
 
-############## testando com coluna categoria
+############## testando com coluna genero
 @app.route('/filter', methods=['GET', 'POST'])
 def filter():
-    filmes = Filme.query.filter_by(categoria=request.form['search']).all()
+    filmes = Filme.query.filter_by(genero=request.form['search']).all()
     return render_template('index.html', filmes=filmes)
-############## testando com coluna categoria
+############## testando com coluna genero
 
 
 ############## testando com coluna nome

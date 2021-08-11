@@ -49,8 +49,8 @@
           <label for="cartaz">Cartaz do Filme</label>
           <input type="text" placeholder="Cartaz do Filme" id="cartaz" name="cartaz" value="{{filme.cartaz}}">
 
-          <label for="categoria">Categoria do Filme</label>
-          <input type="text" placeholder="Categoria do Filme" id="categoria" name="categoria" value="{{filme.categoria}}">
+          <label for="genero">Gênero do Filme</label>
+          <input type="text" placeholder="Gênero do Filme" id="genero" name="genero" value="{{filme.genero}}">
 
           <div>
             {% if filme == '' %}
@@ -72,7 +72,8 @@
                   <th>#</th>
                   <th>Título</th>
                   <th>Cartaz</th>
-                  <th>Categoria</th>
+                  <th>Gênero</th>
+                  <th>Ações</th>
               </tr>
           </thead>
 
@@ -82,7 +83,7 @@
                   <td>{{f.id}}</td>
                   <td>{{f.nome}}</td>
                   <td><a href="{{f.cartaz}}" target="_blank">{{f.cartaz}}</a></td>
-                  <td>{{f.categoria}}</td>
+                  <td>{{f.genero}}</td>
                   <td>
                       <a href="/edit/{{f.id}}">Editar</a>
                       <a href="/{{f.id}}">Apagar</a>
