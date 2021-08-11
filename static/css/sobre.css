@@ -292,7 +292,7 @@ body section#devs P2 {
   font-family: 'Helvetica', serif;
   font-size: 2vw;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
   color: floralwhite;
   display: flex;
   justify-content: center;
