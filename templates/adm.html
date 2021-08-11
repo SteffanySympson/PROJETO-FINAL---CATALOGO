@@ -40,6 +40,9 @@
           <label for="cartaz">Cartaz do Filme</label>
           <input type="text" placeholder="Cartaz do Filme" id="cartaz" name="cartaz" value="{{filme.cartaz}}">
 
+          <label for="categoria">Categoria do Filme</label>
+          <input type="text" placeholder="Categoria do Filme" id="categoria" name="categoria" value="{{filme.categoria}}">
+
           <div>
             {% if filme == '' %}
             <button type="submit">Enviar</button>
@@ -60,6 +63,7 @@
                   <th>#</th>
                   <th>Título</th>
                   <th>Cartaz</th>
+                  <th>Categoria</th>
               </tr>
           </thead>
 
@@ -73,6 +77,7 @@
                       <a href="/edit/{{f.id}}">Editar</a>
                       <a href="/{{f.id}}">Apagar</a>
                   </td>
+                  <td>{{f.categoria}}</td>
               </tr>
               {% endfor %}
           </tbody>
