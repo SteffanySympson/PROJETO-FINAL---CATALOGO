@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../static/css/adm.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="imagem/png" href="../static/img/fox3.png" />
   <title>NINEFLIX | ADM</title>
 </head>
 
@@ -22,6 +23,14 @@
     {% endif %}
     {% endwith %}
   </article>
+
+  <nav>
+    <div id="logo">
+      <a href="/">
+        <img src=" {{ url_for('static', filename='img/logo.png')}} " alt="">
+      </a>
+    </div>
+  </nav>
 
   <section id="body">
 
@@ -96,6 +105,8 @@
   </section>
   {% endif %}
 
+
+  <script src="../static/js/adm.js"></script>
   </section>
 
 </body>
