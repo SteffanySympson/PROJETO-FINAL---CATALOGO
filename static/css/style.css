@@ -126,44 +126,8 @@ div#title-lista a{
 
 div#title-lista a:hover{
 	color: #F40000;
-	
+	transform: scale(1.2);
 }	
-/* section#catalogo div#title-lista2 a{
-	width: 100%;
-	text-align: right;
-	text-decoration: none;
-	color: #fff;
-	margin-bottom: .5rem;
-	padding: .2rem;
-	display: flex;
-} */
-/* ////////////// fim modificando para o filter */
-
-/* section#catalogo table {
-	border-collapse: collapse;
-	width: 100%;
-	border-spacing: 0;
-	color: #fff;
-}
-
-section#catalogo table th, td {
-	padding: 1rem;
-	border-bottom: 1px solid #ddd;
-	text-align: left;
-}
-
-section#catalogo table a {
-	padding: 1rem;
-	color: #fff;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
-}
-
-section#catalogo table a:hover {
-	color: #F40000;
-} */
-
-/* ////////////////////////////// */
 
 h1,
 h2,
@@ -1411,7 +1375,7 @@ body section#devs{
     z-index: initial;
   }
   
-  .box{
+.box{
     position: relative;
     width: 300px;
     height: 300px;
@@ -1423,11 +1387,11 @@ body section#devs{
     transition: 0.5s;
   }
   
-  .box:hover{
+.box:hover{
     height: 400px;
   }
   
-  .box .imgBX{
+.box .imgBX{
     position: absolute;
     top: 0;
     left: 0;
@@ -1436,20 +1400,20 @@ body section#devs{
     padding: 10px;
     box-sizing: border-box;
     
-  }
+}
   
-  .box .imgBX img{
+.box .imgBX img{
     max-width: 100%;
     opacity: 0.1;
     transition: 0.5s;
     border-radius: 2rem;
 }
   
-  .box:hover .imgBX img{
+.box:hover .imgBX img{
     opacity: 1;
   }
   
-  .box:before{
+.box:before{
     content: "";
     position: absolute;
     top: -2px;
@@ -1460,7 +1424,7 @@ body section#devs{
     z-index: -2;
   }
   
-  .box:after{
+.box:after{
     content: "";
     position: absolute;
     top: -2px;
@@ -1472,27 +1436,27 @@ body section#devs{
     filter: blur(40px);
   }
   
-  .box:before, .box:after{
+.box:before, .box:after{
     background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
   }
   
-  .box:nth-child(2):before, .box:nth-child(2):after{
+.box:nth-child(2):before, .box:nth-child(2):after{
     background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
   }
   
-  .box:nth-child(3):before, .box:nth-child(3):after{
+.box:nth-child(3):before, .box:nth-child(3):after{
     background: linear-gradient(235deg,#772aff,#010615,#2196f3);
   }
   
-  .box:nth-child(3):before, .box:nth-child(3):after{
+.box:nth-child(3):before, .box:nth-child(3):after{
     background: linear-gradient(235deg,#772aff,#010615,#2196f3);
   }
   
-  .box:nth-child(5):before, .box:nth-child(5):after{
+.box:nth-child(5):before, .box:nth-child(5):after{
     background: linear-gradient(235deg,#ffbd00,#010615,#390099);
   }
   
-  .box .content{
+.box .content{
     position: absolute;
     bottom: 0;
     left: 10px;
@@ -1507,11 +1471,11 @@ body section#devs{
     transition: 0.5s;
   }
   
-  .box:hover .content{
+.box:hover .content{
     opacity: 1;
   }
   
-  .box .content h2{
+.box .content h2{
     font-size: 20px;
     color: #fff;
     font-weight: 500;
@@ -1519,7 +1483,7 @@ body section#devs{
     letter-spacing: 1px;
   }
   
-  .box .content h2 span{
+.box .content h2 span{
     font-size: 14px;
     color: #fff;
     font-weight: 200;
