@@ -87,36 +87,56 @@ nav ul li a:hover {
 	color: #F40000;
 } */
 
-
-
 section#catalogo {
 	max-width: 100%;
-	padding: 2rem;
+	/* padding: 2rem; */
 	overflow-x: auto;
 }
 
 
 /* modificando para o filter //////////// */
-section#catalogo div#title-lista{
+section#catalogo2, section#catalogo{
 	display: flex;
-	justify-content: center;
 }
 
-section#catalogo div#title-lista h3 {
-	width: 50%;
+section#catalogo2 h3{
+	width: 60%;
 	text-align: right;
 	color: #fff;
 	font-size: 3rem;
 	letter-spacing: 0.3rem;
-	margin-bottom: 3rem;
+	margin-bottom: .5rem;
 }
 
-section#catalogo div#title-lista a{
-	width: 25%;
+div#title-lista{
+	display: flex;
+	align-items: right;
+}
+div#title-lista a{
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: .5rem;
+	padding: .2rem;
+	transition: 0.3s ease-in-out;
+	font-size: 1.2rem;
+	
+}
+
+div#title-lista a:hover{
+	color: #F40000;
+	
+}	
+/* section#catalogo div#title-lista2 a{
+	width: 100%;
 	text-align: right;
 	text-decoration: none;
 	color: #fff;
-}
+	margin-bottom: .5rem;
+	padding: .2rem;
+	display: flex;
+} */
 /* ////////////// fim modificando para o filter */
 
 /* section#catalogo table {
