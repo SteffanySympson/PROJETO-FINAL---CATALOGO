@@ -107,7 +107,7 @@ def auth():
 @app.route('/filter', methods=['GET', 'POST'])
 def filter():
     filmes = Filme.query.filter_by(nome=request.form['search']).all()
-    return render_template('catalogo.html', filmes=filmes) 
+    return render_template('index.html', filmes=filmes) 
 ############## testando com coluna nome 
 
 @app.route('/sobre')

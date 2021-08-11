@@ -12,55 +12,47 @@
 		<link rel="stylesheet" href="../static/css/slicknav.min.css"/>
 		<link rel="stylesheet" href="../static/css/fresco.css"/>
 		<link rel="stylesheet" href="../static/css/slick.css"/>
-		<link rel="stylesheet" href="../static/css/catalogo.css"/>
 		<!-- Main Stylesheets -->
 		<link rel="stylesheet" href="../static/css/style.css"/>
 
 	</head>
 	<body>
-		<!-- Page Preloder -->
-		<div id="preloder">
-			<div class="loader"></div>
-		</div>
-
-		<header class="header">
-			<div class="container-fluid">
-				<div class="row">
-						<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center">
-							<a href="/" class="site-logo">
-								<img src="/static/img/logo.png" alt="">
-							</a>
-						</div>
-					<div class="col-sm-4 col-md-3 order-3 order-sm-3">
-						<div class="header__switches">
-							<a href="/adm"><i class="fa fa-cog"></i></a>
-						</div>
-					</div>
-					
-				</div>
-				
-				<nav class="main__menu">
-					<ul class="nav__menu">
-						<li><a href="/sobre" class="menu--active">Sobre o projeto</a></li>
-					</ul>
-					<div id="filtro-config">
-						<!-- eu não seu se necessáriamente precisa dessa div filtro-filmes ou talvez poderia falar com o form-->
-						<div id="filtro-filmes">
-							<form action="/filter" method="POST">
-								<!-- a div filtro-input era para conseguir envolver os dois na borda branca-->
-								<div id="filtro-input">
-									<input type="search" placeholder="Pesquisar" id="search" name="search">
-								</div>
-								<!-- <button class="btn btn-danger" type="submit">Pesquisar</button> -->
-							</form>
-						</div>
-					</div>
-				</nav>
+		<nav>
+			<div id="logo">
+				<a href="/">
+					<img src=" {{ url_for('static', filename='img/logo.png')}} " alt="">
+				</a>
 			</div>
-		</header>
 
-		
-		<!-- Header Section end -->
+			<ul class="nav-list">
+				<li><a href="/sobre">Sobre</a></li>
+			</ul>
+
+			<div id="filtro-config">
+				<div id="filtro-filmes">
+					<form action="/filter" method="POST">
+						<div id="filtro-input">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<input type="search" placeholder="Pesquisar" id="search" name="search">
+						</div>
+							
+					</form>
+				</div>
+				<div id="icon-config">
+					<a href="/login" id="config"> 
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<section id="catalogo">
+			<div id="title-lista">
+				<h3>Catálogo</h3>
+				<a href="/">Listar Tudo</a>
+			</div>
+
+	  </section>
 
 		<!-- Hero Section -->
 		<section class="hero__section">
