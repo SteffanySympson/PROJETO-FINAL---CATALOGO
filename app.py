@@ -12,7 +12,7 @@ class Filme(db.Model):
     cartaz = db.Column(db.String(500), nullable=False)
     categoria = db.Column(db.String(150), nullable=False)
 
-    def __init__(self, nome, cartaz, categoria): #passar categoria como parametro
+    def __init__(self, nome, cartaz, categoria): 
         self.nome = nome
         self.cartaz = cartaz
         self.categoria = categoria
@@ -93,12 +93,12 @@ def auth():
         flash('Erro no login, tente novamente!')
         return redirect('/login')
 
-############## descomentar quando zerar a tabela e criar com coluna categoria
+############## testando com coluna categoria
 @app.route('/filter', methods=['GET', 'POST'])
 def filter():
     filmes = Filme.query.filter_by(categoria=request.form['search']).all()
     return render_template('index.html', filmes=filmes)
-############## descomentar quando zerar a tabela e criar com coluna categoria
+############## testando com coluna categoria
 
 
 ############## testando com coluna nome
