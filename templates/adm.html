@@ -44,7 +44,7 @@
       {% endif %}
 
           <label for="nome">Título do Filme</label>
-          <input type="text" placeholder="Título do filme" id="nome" name="nome" value="{{filme.nome}}">
+          <input type="text" placeholder="Ttulo do filme" id="nome" name="nome" value="{{filme.nome}}">
 
           <label for="cartaz">Cartaz do Filme</label>
           <input type="text" placeholder="Cartaz do Filme" id="cartaz" name="cartaz" value="{{filme.cartaz}}">
@@ -54,10 +54,10 @@
 
           <div>
             {% if filme == '' %}
-            <button type="submit">Enviar</button>
+            <button type="submit">Cadastrar</button>
             {% else %}
             <a href="/adm">Cancelar</a>
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Atualizar</button>
             {% endif %}
           </div>
 
