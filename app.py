@@ -93,20 +93,10 @@ def auth():
         flash('Erro no login, tente novamente!')
         return redirect('/login')
 
-############## testando com coluna genero
 @app.route('/filter', methods=['GET', 'POST'])
 def filter():
     filmes = Filme.query.filter_by(genero=request.form['search']).all()
     return render_template('index.html', filmes=filmes)
-############## testando com coluna genero
-
-
-############## testando com coluna nome
-# @app.route('/filter', methods=['GET', 'POST'])
-# def filter():
-#     filmes = Filme.query.filter_by(nome=request.form['search']).all()
-#     return render_template('index.html', filmes=filmes) 
-############## testando com coluna nome 
 
 @app.route('/sobre')
 def catalogo():
