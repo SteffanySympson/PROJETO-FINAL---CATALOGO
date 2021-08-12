@@ -135,6 +135,12 @@ article#msg ul {
   border-radius: 0 0 .5rem .5rem;
   position: fixed;
   top: 0;
+  left: 0;
+  margin-left: 30rem;
+}
+
+article#msg ul li{
+  background-color: #97161c;
 }
 
 body section#login-box {
