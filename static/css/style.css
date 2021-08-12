@@ -120,17 +120,36 @@ div#title-lista{
 }
 div#title-lista a{
 	width: 100%;
-	text-align: center;
+	text-align:start;
 	text-decoration: none;
 	color: #fff;
 	margin-bottom: .5rem;
-	padding: .2rem;
 	transition: 0.3s ease-in-out;
 	font-size: 1.2rem;
 	
 }
 
 div#title-lista a:hover{
+	color: #F40000;
+	transform: scale(1.2);
+}	
+
+div#listar-tudo{
+	display: flex;
+	align-items: right;
+}
+div#listar-tudo a{
+	width: 100%;
+	text-align:start;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: .5rem;
+	transition: 0.3s ease-in-out;
+	font-size: 1.2rem;
+	
+}
+
+div#listar-tudo a:hover{
 	color: #F40000;
 	transform: scale(1.2);
 }	
