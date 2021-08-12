@@ -40,11 +40,11 @@
       <h1>Cadastre um novo filme</h1>
       {% else %}
       <form action='/edit/{{filme.id}}' method="POST">
-      <h1>Atualize o fime</h1>
+      <h1>Atualize o filme</h1>
       {% endif %}
 
-          <label for="nome">Nome do Filme</label>
-          <input type="text" placeholder="Nome do filme" id="nome" name="nome" value="{{filme.nome}}">
+          <label for="nome">Título do Filme</label>
+          <input type="text" placeholder="Título do filme" id="nome" name="nome" value="{{filme.nome}}">
 
           <label for="cartaz">Cartaz do Filme</label>
           <input type="text" placeholder="Cartaz do Filme" id="cartaz" name="cartaz" value="{{filme.cartaz}}">
@@ -57,7 +57,7 @@
             <button type="submit">Enviar</button>
             {% else %}
             <a href="/adm">Cancelar</a>
-            <button type="submit">Atualizar</button>
+            <button type="submit">Cadastrar</button>
             {% endif %}
           </div>
 
