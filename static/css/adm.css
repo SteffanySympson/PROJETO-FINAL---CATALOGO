@@ -12,14 +12,14 @@ html, body {
 }
 
 nav {
-	background-color: #090809;
-	width: 100%;
+  background-color: #090809;
+  width: 100%;
 }
 
 nav div#logo a img {
-	width: 10rem;
-	padding: 0.3rem;
-	margin-left: 1rem;
+  width: 10rem;
+  padding: 0.3rem;
+  margin-left: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -27,15 +27,15 @@ nav div#logo a img {
 }
 
 ::-webkit-scrollbar-track {
-  background: #161a1d; 
+  background: #161a1d;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(182, 32, 32); 
+  background: rgb(182, 32, 32);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e5383b; 
+  background: #e5383b;
 }
 
 aside#left {
@@ -43,36 +43,36 @@ aside#left {
   padding: 3rem;
   position: fixed;
   top: 6rem;
-  left: 3rem ;
+  left: 3rem;
   border-radius: 1rem;
   width: 15rem;
   box-shadow: rgba(48, 48, 48, .5) 0px 8px 24px;
 }
 
-aside ul{
+aside ul {
   list-style: none;
   padding-top: 2rem;
 }
 
-aside ul a li{
+aside ul a li {
   padding: .7rem;
   font-size: 1.1rem;
   font-weight: 600;
   color: rgb(228, 0, 0);
-  border-radius: .3rem ;
-  transition: all .4s ease-in-out ;
+  border-radius: .3rem;
+  transition: all .4s ease-in-out;
 }
 
-aside ul a li:hover{
+aside ul a li:hover {
   background-color: rgb(228, 0, 0);
   color: #fff;
 }
 
-aside ul a{
+aside ul a {
   text-decoration: none;
 }
 
-aside h1{
+aside h1 {
   text-align: center;
   color: rgb(228, 0, 0);
   font-size: 2rem;
@@ -83,13 +83,13 @@ aside#right {
   padding: 3rem;
   position: fixed;
   top: 6rem;
-  right: 3rem ;
+  right: 3rem;
   border-radius: 1rem;
   width: 15rem;
   box-shadow: rgba(149, 157, 165, .5) 0px 8px 24px;
 }
 
-aside#right p{
+aside#right p {
   color: rgb(228, 0, 0);
   text-align: justify;
   margin-top: 2rem;
@@ -100,13 +100,13 @@ a {
 }
 
 article#new {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
 }
 
-article#msg{
+article#msg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +118,7 @@ article#msg ul {
   color: whitesmoke;
   padding: 1rem;
   font-size: 1.2rem;
-  font-weight:600;
+  font-weight: 600;
   list-style: none;
   text-align: center;
   margin-bottom: 2rem;
@@ -127,63 +127,63 @@ article#msg ul {
   top: 0;
 }
 
-form{
-padding: 3rem;
-background-color: #fff;
-width: 50%;
-position: relative;
-box-shadow: rgba(149, 157, 165, .5) 0px 8px 24px;
-border-radius: 1rem;
+form {
+  padding: 3rem;
+  background-color: #fff;
+  width: 50%;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, .5) 0px 8px 24px;
+  border-radius: 1rem;
 }
 
-form h1{
-padding-bottom: 3rem;
-text-align: center;
-color: rgb(228, 0, 0) ;
-font-size: 2rem;
+form h1 {
+  padding-bottom: 3rem;
+  text-align: center;
+  color: rgb(228, 0, 0);
+  font-size: 2rem;
 }
 
-form input, textarea{
-width: 100%;
-padding: 0.5em;
-font-size: 1.2rem;
-margin: 0 0 1em;
-border: 1px solid #ccc;
-outline: none;
+form input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
 form label {
-width: 100%;
-font-size: 1.2rem;
+  width: 100%;
+  font-size: 1.2rem;
 }
 
 form button {
-border: 1px solid rgb(228, 0, 0);
-background-color: #fff;
-color: rgb(228, 0, 0);
-font-size: 1rem;
-font-weight: 600;
-padding: 1rem;
-border-radius: 0.5rem;
-display: block;
-margin: auto;
-margin-top: 2rem;
-margin-bottom: 1rem;
-cursor: pointer;
-transition: background-color 0.4s ease-in-out;
-width: 40%;
+  border: 1px solid rgb(228, 0, 0);
+  background-color: #fff;
+  color: rgb(228, 0, 0);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+  width: 40%;
 }
 
 form button:hover {
-background-color: rgb(228, 0, 0);
-color: #fff;
+  background-color: rgb(228, 0, 0);
+  color: #fff;
 }
 
-form div{
+form div {
   display: flex;
 }
 
-form div a{
+form div a {
   border: 1px solid #ff0000;
   background-color: #fff;
   color: #ff0000;
@@ -205,7 +205,7 @@ form div a{
 form div a:hover {
   background-color: #ff0000;
   color: #fff;
-  }
+}
 
 article#lista {
   display: flex;
@@ -214,7 +214,6 @@ article#lista {
   padding: 6rem;
   overflow-x: auto;
 }
-
 
 article#lista table {
   border-collapse: collapse;
@@ -227,10 +226,10 @@ article#lista table {
 }
 
 article#lista table th, td {
-padding: 1rem;
-border-bottom: 1px solid rgb(255, 255, 255);
-text-align: left;
-color:rgb(255, 255, 255);
+  padding: 1rem;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  text-align: left;
+  color: rgb(255, 255, 255);
 }
 
 article#lista table td {
@@ -240,15 +239,14 @@ article#lista table td {
   white-space: nowrap;
 }
 
-
 article#lista table a {
-padding: 1rem;
-color: rgb(228, 0, 0);
-text-decoration: none;
-transition: all 0.3s ease-in-out;
+  padding: 1rem;
+  color: rgb(228, 0, 0);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
-article#lista table a:hover{
+article#lista table a:hover {
   color: #fbaaaa;
 }
 
@@ -259,123 +257,122 @@ article#edit {
   padding: 6rem;
 }
 
-
 /* Estilos do modal */
 
 section.modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #00000080;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #00000080;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
 }
 
 section.modal div#card {
-    width: 30rem;
-    position: relative;
-    background-color: #97161c;
-    border-radius: .5rem;
+  width: 30rem;
+  position: relative;
+  background-color: #97161c;
+  border-radius: .5rem;
 }
 
 section.modal div#card h2 {
-    padding: 2rem;
-    margin: 0;
-    color: #fff;
+  padding: 2rem;
+  margin: 0;
+  color: #fff;
 }
 
 section.modal div#card a#fechar {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 2rem;
-    color: #000;
-    padding: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2rem;
+  color: #000;
+  padding: 1.5rem;
 }
 
 section.modal div#card a#fechar:hover {
-    color: #fff;
+  color: #fff;
 }
 
 section.modal div#card hr {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 section.modal div#card p {
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 2rem;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 section.modal div#card div#btns {
-    display: flex;
-    justify-content: center;
-    padding: 0 2rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem 2rem 2rem;
 }
 
 section.modal div#card div#btns a {
-    text-decoration: none;
-    padding: .9rem;
-    border-radius: .5rem;
-    width: 7rem;
-    text-align: center;
+  text-decoration: none;
+  padding: .9rem;
+  border-radius: .5rem;
+  width: 7rem;
+  text-align: center;
 }
 
 section.modal div#card div#btns a.btn-cancelar {
-    color: #fff;
-    border: solid 1px #fff;
-    margin-right: 1rem;
-    transition: all .5s ease-out;
+  color: #fff;
+  border: solid 1px #fff;
+  margin-right: 1rem;
+  transition: all .5s ease-out;
 }
 
 section.modal div#card div#btns a.btn-cancelar:hover {
-    background-color: #fff;
-    color: #DA1E26;
+  background-color: #fff;
+  color: #DA1E26;
 }
 
 section.modal div#card div#btns a.btn-apagar {
-    color: #fff;
-    border: solid 1px #fff;
-    transition: all .5s ease-out;
+  color: #fff;
+  border: solid 1px #fff;
+  transition: all .5s ease-out;
 }
 
 section.modal div#card div#btns a.btn-apagar:hover {
-    background-color: #fff;
-    color: #DA1E26;
+  background-color: #fff;
+  color: #DA1E26;
 }
 
 /*---------------------
    Footer section
  -----------------------*/
 
- .footer__copyright__text {
-	text-align: center;
-	padding-bottom: 5px;
+.footer__copyright__text {
+  text-align: center;
+  padding-bottom: 5px;
   color: white;
 }
 
 .footer__copyright__text p {
-	font-size: 16px;
+  font-size: 16px;
   color: white;
 }
 
 .footer__copyright__text i {
-	color: #d32a2a;
+  color: #d32a2a;
 }
 
 .footer__copyright__text a {
-	color: white;
-	text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 .footer__copyright__text a:hover {
-	color: rgb(253, 109, 109);
+  color: rgb(253, 109, 109);
 }

@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="imagem/png" href="../static/img/fox3.png" />
-    <title>Nineflix | Autenticação</title>
+    <title>Nineflix | Login</title>
 </head>
 <body>
     
+    <article id="msg">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class=flashes>
+          {% for message in messages %}
+          <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+      </article>
+
 <nav>
     <a class="logo" href="/"><img src="../static/img/logo.png" id="img"></a>
     <div class="mobile-menu">
@@ -34,7 +46,7 @@
     </section>
 
     <footer></footer>
-    <script src="../static/js/inicio.js"></script>
+    <script src="../static/js/adm.js"></script>
     
 
 </body>
